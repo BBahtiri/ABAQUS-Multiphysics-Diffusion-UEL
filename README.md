@@ -9,7 +9,7 @@ A coupled multiphysics finite element implementation for moisture diffusion in e
 
 ## 🔬 Overview
 
-This project implements a **User Element (UEL)** for ABAQUS that simulates the coupled hydro-mechanical behavior of moisture diffusion in polymer materials. The element captures **bidirectional coupling** between mechanical stress fields and moisture transport phenomena, making it a true multiphysics simulation.
+This project implements a **User Element (UEL)** for ABAQUS that simulates the coupled hydro-mechanical behavior of moisture diffusion in polymer materials. The element captures **bidirectional coupling** between mechanical stress fields and moisture transport phenomena, making it a multiphysics simulation.
 
 ### Key Physics
 
@@ -96,27 +96,6 @@ This project implements a **User Element (UEL)** for ABAQUS that simulates the c
 *UEL PROPERTY, ELSET=SOLID
 210000., 0.3, 0.0127
 ! E [MPa], ν [-], D [mm²/s]
-```
-
-## 📁 Repository Structure
-
-```
-📦 ABAQUS-Multiphysics-Diffusion-UEL/
-├── 📄 README.md                    # This file
-├── 📄 LICENSE                      # MIT License
-├── 📄 .gitignore                   # Git ignore patterns
-├── 🔧 Diffusion_3D.for             # Main UEL subroutine (18 KB)
-├── 📊 VisualMesh.m                 # MATLAB visualization script (2 KB)
-├── 📋 README.txt                   # Original setup instructions
-├── 📚 docs/                        # Documentation
-│   ├── 📖 Documentation.pdf        # Complete technical documentation (859 KB)
-│   └── 🖼️ images/                  # Figures and diagrams
-├── 🧪 examples/                    # Example cases
-│   ├── 📁 simple_cube/             # Basic validation case
-│   ├── 📁 tension_test/            # Mechanical loading example
-│   └── 📁 validation/              # Verification cases
-└── 🛠️ tools/                       # Utilities
-    └── 📊 post_processing/          # Analysis scripts
 ```
 
 ## 🔬 Physics and Theory
